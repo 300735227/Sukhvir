@@ -1,0 +1,127 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminAddDoctorSchedule">
+
+
+<LinearLayout 
+    android:id="@+id/LinearLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     >
+
+
+
+    <TextView
+        android:id = "@+id/doctorProfileTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/WelcomeLineOnEachPage" />
+    
+    <TextView
+        android:id = "@+id/lblName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style = "@style/LabelForProfileAttribute"
+        android:layout_marginTop="10dp"
+        android:text="Name" />
+    <TextView
+        android:id = "@+id/displayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="14sp" />
+    
+        <TextView
+        android:id = "@+id/lblContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        style = "@style/LabelForProfileAttribute"
+        android:text="Contact Information" />
+    <TextView
+        android:id = "@+id/displayContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="14sp" />
+    
+        <TextView
+        android:id = "@+id/lblDepartment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        style = "@style/LabelForProfileAttribute"
+        android:text="Department" />
+    	
+    	<TextView
+        android:id = "@+id/displayDepartment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="14sp" />
+
+    	
+     <TextView
+        android:id = "@+id/lblDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        style = "@style/LabelForProfileAttribute"
+        android:text="Day" />
+     <!-- Day spinner -->
+       <Spinner
+        android:id="@+id/spnDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/spinnerDay" />
+    
+     <TextView
+        android:id = "@+id/lblDutyStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        style = "@style/LabelForProfileAttribute"
+        android:text="Duty Start Time" />
+     
+     <!-- TimePicker -->
+
+    	<TimePicker
+    	    android:id="@+id/tpDutyStart"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content" />
+
+     <TextView
+        android:id = "@+id/lblDutyEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        style = "@style/LabelForProfileAttribute"
+        android:text="Duty End Time" />
+     <!-- TimePicker -->
+
+
+      <TimePicker
+         android:id="@+id/tpDutyEnd"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+     <!-- Add other time button -->
+     <!-- Save schedule -->
+     
+     
+     <Button
+         android:id="@+id/btnAddSchedule"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:text="Add Schedule" />
+     
+          <Button
+         android:id="@+id/btnDone"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:text="Done" />
+     
+</LinearLayout>
+</ScrollView>
